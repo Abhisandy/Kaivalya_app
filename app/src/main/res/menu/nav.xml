@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/aaa">
+        </item>
+        </group>
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/events"
+            android:title="Sponsors"
+            android:icon="@drawable/spon">
+        </item>
+        </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/eee"
+            android:title="Events"
+            android:icon="@drawable/eve">
+
+        </item>
+
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/work"
+            android:title="Contact Us"
+            android:icon="@drawable/cont">
+        </item>
+        </group>
+
+
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/part"
+            android:title="Developers"
+            android:icon="@drawable/dev">
+
+        </item>
+        </group>
+  
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/btk"
+            android:title="Query"
+            android:icon="@drawable/aaa">
+
+        </item>
+
+    </group>
+
+
+
+
+
+</menu>

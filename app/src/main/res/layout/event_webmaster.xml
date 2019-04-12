@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="80dp"
+    sothree:umanoShadowHeight="4dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoScrollableView="@+id/list">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:background="@drawable/b3"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/webnew"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="COORDINATORS:"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shubham Pandey"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp"
+
+                />
+            <ImageView
+                android:id="@+id/web11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sharad Pandey"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp"
+
+                />
+            <ImageView
+                android:id="@+id/web22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="false"
+        android:id="@+id/dragView"
+        android:layout_marginTop="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/draw1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_more"
+                android:textColor="#fcfcfc"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/b3"
+            android:textColor="#ffffff"
+            android:text="@string/webmaster_is_a_team_event_which_is_conducted_both_online_on_hackerearth_com_and_onsite_in_btkit_campus_with_preliminary_and_main_round_preliminary_round_or_qualification_round_is_the_core_of_the_competition_in_which_we_give_you_the_theme_and_you_give_us_the_design_complete_web_application_needs_to_be_submitted_with_all_functionality_and_innovation_selected_teams_will_qualify_for_the_main_round_in_which_a_specific_functionality_needs_to_be_added_on_the_web_application_to_test_on_the_spot_skills_of_the_team_the_task_for_the_main_round_will_go_live_during_the_commencement_of_the_main_round_and_the_duration_will_be_3_hours_at_the_end_of_the_round_final_submissions_will_be_made_and_winner_will_be_decided_on_the_basis_of_overall_score_of_preliminary_and_main_round"/>
+    -->
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/b3"
+            android:textColor="#ffffff"
+            android:text="@string/webmaster_is_a_team_event_which_is_conducted_both_online_on_hackerearth_com_and_onsite_in_btkit_campus_with_preliminary_and_main_round_preliminary_round_or_qualification_round_is_the_core_of_the_competition_in_which_we_give_you_the_theme_and_you_give_us_the_design_complete_web_application_needs_to_be_submitted_with_all_functionality_and_innovation_selected_teams_will_qualify_for_the_main_round_in_which_a_specific_functionality_needs_to_be_added_on_the_web_application_to_test_on_the_spot_skills_of_the_team_the_task_for_the_main_round_will_go_live_during_the_commencement_of_the_main_round_and_the_duration_will_be_3_hours_at_the_end_of_the_round_final_submissions_will_be_made_and_winner_will_be_decided_on_the_basis_of_overall_score_of_preliminary_and_main_round"/>
+    </LinearLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

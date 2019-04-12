@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="examples">
+        <item>Gaurav Pant</item>
+        <item>CSE Third Year</item>
+    </string-array>
+
+    <string-array name="example">
+        <item>Sumit Bhardwaj</item>
+        <item>CSE Third Year</item>
+    </string-array>
+
+
+    <string-array name="exampl">
+        <item>Abhishek Saini</item>
+        <item>CSE Third Year</item>
+    </string-array>
+
+    <string-array name="examplee">
+        <item>Developers</item>
+        <item>Support The Development</item>
+    </string-array>
+</resources>

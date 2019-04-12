@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="80dp"
+    sothree:umanoShadowHeight="4dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoScrollableView="@+id/list">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:background="@drawable/b3"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:scaleType="centerCrop"
+            android:background="@drawable/kaiv"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:text="COORDINATORS:"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rohit Juyal"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:layout_marginBottom="20dp"
+
+            />
+<ImageView
+    android:id="@+id/kcall1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/call"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gaurav Pant"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp"
+
+                />
+            <ImageView
+                android:id="@+id/kcall2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call"/>
+        </LinearLayout>
+       <!-- <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shruti Pant"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:layout_marginBottom="20dp"
+
+                />
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="false"
+        android:id="@+id/dragView"
+        android:layout_marginTop="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/draw1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_more"
+                android:textColor="#fcfcfc"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+
+    <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+android:background="@drawable/b3"
+            android:textColor="#ffffff"
+            android:text="@string/at_kav_droid_we_give_developers_from_colleges_a_chance_to_create_an_android_application_and_win_exciting_prizes_kaiv_droid_is_a_team_event_with_a_team_of_up_to_3_members_this_event_is_to_be_hosted_online_on_hackerearth_com_kaiv_droid_will_be_in_two_rounds_preliminary_qualification_round_and_a_main_round_for_preliminary_round_a_task_will_be_provided_at_hackerearth_com_1_week_prior_to_the_main_kaivalya_event_the_time_to_complete_the_task_will_be_5_days_and_after_5_days_submissions_will_be_checked_and_teams_will_be_selected_for_main_round_based_on_the_performance_the_main_round_will_proceed_during_the_kaivalya_event_and_in_main_round_one_functionality_will_be_required_to_be_added_in_the_previously_submitted_application_the_task_will_go_live_during_the_start_of_the_event_and_the_time_for_task_completion_is_3_hours_the_final_result_will_be_calculated_on_the_basis_of_performance_in_both_pre_and_main_round_more_than_an_event_kav_droid_is_a_platform_to_make_you_reach_to_the_common_man_with_your_development_skills_and_creativity_so_don_t_wait_for_registering_yourself"/>
+-->
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/b3"
+            android:textColor="#ffffff"
+            android:text="@string/at_kav_droid_we_give_developers_from_colleges_a_chance_to_create_an_android_application_and_win_exciting_prizes_kaiv_droid_is_a_team_event_with_a_team_of_up_to_3_members_this_event_is_to_be_hosted_online_on_hackerearth_com_kaiv_droid_will_be_in_two_rounds_preliminary_qualification_round_and_a_main_round_for_preliminary_round_a_task_will_be_provided_at_hackerearth_com_1_week_prior_to_the_main_kaivalya_event_the_time_to_complete_the_task_will_be_5_days_and_after_5_days_submissions_will_be_checked_and_teams_will_be_selected_for_main_round_based_on_the_performance_the_main_round_will_proceed_during_the_kaivalya_event_and_in_main_round_one_functionality_will_be_required_to_be_added_in_the_previously_submitted_application_the_task_will_go_live_during_the_start_of_the_event_and_the_time_for_task_completion_is_3_hours_the_final_result_will_be_calculated_on_the_basis_of_performance_in_both_pre_and_main_round_more_than_an_event_kav_droid_is_a_platform_to_make_you_reach_to_the_common_man_with_your_development_skills_and_creativity_so_don_t_wait_for_registering_yourself"/>
+    </LinearLayout>
+
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

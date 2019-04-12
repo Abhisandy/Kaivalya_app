@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:src="@drawable/b5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+
+        />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.android.kaivalya.kaivalya.example.android.kaivalya.MainActivity">
+
+
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/circle_menu"
+        android:layout_gravity="center"
+        android:layout_width="400dp"
+
+        android:layout_height="400dp" />
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/cv_countdownViewTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="20dp"
+        app:isHideTimeBackground="false"
+
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="true"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:suffixGravity="center"
+        app:suffixTextColor="#ff0000"
+        app:suffixTextSize="30sp"
+        app:timeBgDivisionLineSize="1dp"
+        app:timeBgRadius="3dp"
+        app:timeBgSize="50dp"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="30sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ka"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+    </RelativeLayout>
